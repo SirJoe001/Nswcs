@@ -2,8 +2,8 @@
 include 'db.php';
 	
 	$owners_id = $_POST['owners_id'];
-	$prev = $_POST['prev'];
-	$pres = $_POST['pres'];
+	$prev = floatval($_POST['prev']);
+	$pres = floatval($_POST['pres']);
 	$totalcun = $pres - $prev;
 	$price = $_POST['price'];
 	$pricetotal = $totalcun * $price;
